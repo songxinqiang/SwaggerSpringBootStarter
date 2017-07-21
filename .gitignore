@@ -1,6 +1,27 @@
 *.class
+bin
 
 # Package Files #
 *.jar
 *.war
 *.ear
+
+# ignore Maven generated target folders
+target
+
+# ignore eclipse files
+.project
+.classpath
+.settings
+.metadata
+
+# idea files
+.idea
+*.iml
+.tmp
+
+# visual studio code
+.vscode
+
+# macOS files
+.DS_Store

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>swagger-spring-boot-starter</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <parent>
+        <groupId>cn.songxinqiang</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>1.7.1</version>
+    </parent>
+
+    <name>SpringBootSwaggerStarter</name>
+    <description>
+        在Spring-Boot中使用Swagger,会自动配置
+    </description>
+    <url>https://git.oschina.net/songxinqiang/SpringBootSwaggerStarter</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>阿信sxq</name>
+            <email>songxinqiang@vip.qq.com</email>
+            <url>http://my.oschina.net/songxinqiang/</url>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@git.oschina.net:songxinqiang/SpringBootSwaggerStarter.git</connection>
+        <developerConnection>scm:git:git@git.oschina.net:songxinqiang/SpringBootSwaggerStarter.git</developerConnection>
+        <url>https://git.oschina.net/songxinqiang/SpringBootSwaggerStarter</url>
+    </scm>
+
+    <properties>
+        <spring-boot.version>1.5.4.RELEASE</spring-boot.version>
+        <swagger.version>2.7.0</swagger.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <!-- Import dependency management from Spring Boot,not include plugin management as the parent import style -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+    </dependencies>
+</project>
