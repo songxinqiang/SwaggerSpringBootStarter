@@ -27,6 +27,7 @@ package cn.songxinqiang.starter.swagger;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
+ * 配置文件
  *
  * @author 阿信sxq
  *
@@ -41,6 +42,10 @@ public class SwaggerApiProperties {
     private String contactUser;
     private String contactUrl;
     private String contactEmail;
+    
+    public String getName() {
+        return name;
+    }
     
     public String getTitle() {
         return title;
@@ -58,8 +63,16 @@ public class SwaggerApiProperties {
         return contactUser;
     }
     
+    public String getContactUrl() {
+        return contactUrl;
+    }
+    
     public String getContactEmail() {
         return contactEmail;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
     }
     
     public void setTitle(String title) {
@@ -78,28 +91,13 @@ public class SwaggerApiProperties {
         this.contactUser = contactUser;
     }
     
-    public void setContactEmail(String contactEmail) {
-        this.contactEmail = contactEmail;
-    }
-
-    
-    public String getContactUrl() {
-        return contactUrl;
-    }
-
-    
     public void setContactUrl(String contactUrl) {
         this.contactUrl = contactUrl;
     }
-
     
-    public String getName() {
-        return name;
+    public void setContactEmail(String contactEmail) {
+        this.contactEmail = contactEmail;
     }
-
     
-    public void setName(String name) {
-        this.name = name;
-    }
 
 }
