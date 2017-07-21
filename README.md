@@ -1,0 +1,2 @@
+#SpringBootSwaggerStarter
+在spring-boot中使用swagger，自动配置
