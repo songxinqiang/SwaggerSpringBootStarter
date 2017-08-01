@@ -25,9 +25,8 @@
 package cn.songxinqiang.starter.swagger;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -48,8 +47,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @Configuration
 @EnableSwagger2
-@ConditionalOnWebApplication
-@ConditionalOnBean(Controller.class)
+@ConditionalOnClass(Controller.class)
 @ConditionalOnMissingBean(Docket.class)
 @EnableConfigurationProperties(SwaggerApiProperties.class)
 public class SwaggerAutoConfigure {
