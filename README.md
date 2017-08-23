@@ -13,7 +13,7 @@
 <dependency>
     <groupId>cn.songxinqiang</groupId>
     <artifactId>swagger-spring-boot-starter</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 
@@ -33,4 +33,10 @@ swagger.api.contactEmail = #联系人邮箱
 
 api的控制器会监听在地址`v2/api-docs?group=<swagger.api.name配置的值>`,
 对于swagger ui来说需要指定服务器的“基础地址”为项目的根地址即可
+
+## 说明
+
+本组件应对的是在使用Spring MVC时的场景，只会处理`@Controller`,`@RequestMapping`等其他与之关联的注解
+
+基于[springfox-swagger2](https://github.com/springfox/springfox),本组件只是简单的配置了一下下，感谢他们
 
