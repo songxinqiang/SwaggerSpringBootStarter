@@ -4,19 +4,19 @@
 
     <artifactId>swagger-spring-boot-starter</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
     <parent>
         <groupId>cn.songxinqiang</groupId>
         <artifactId>oss-parent</artifactId>
-        <version>1.8.0</version>
+        <version>1.8.1</version>
     </parent>
 
     <name>SpringBootSwaggerStarter</name>
     <description>
         在Spring-Boot中使用Swagger,会自动配置
     </description>
-    <url>https://git.oschina.net/songxinqiang/SpringBootSwaggerStarter</url>
+    <url>https://gitee.com/songxinqiang/SpringBootSwaggerStarter</url>
 
     <licenses>
         <license>
@@ -35,13 +35,13 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git@git.oschina.net:songxinqiang/SpringBootSwaggerStarter.git</connection>
-        <developerConnection>scm:git:git@git.oschina.net:songxinqiang/SpringBootSwaggerStarter.git</developerConnection>
-        <url>https://git.oschina.net/songxinqiang/SpringBootSwaggerStarter</url>
+        <connection>scm:git:git@gitee.com:songxinqiang/SpringBootSwaggerStarter.git</connection>
+        <developerConnection>scm:git:git@gitee.com:songxinqiang/SpringBootSwaggerStarter.git</developerConnection>
+        <url>https://gitee.com/songxinqiang/SpringBootSwaggerStarter</url>
     </scm>
 
     <properties>
-        <spring-boot.version>1.5.6.RELEASE</spring-boot.version>
+        <spring-boot.version>1.5.8.RELEASE</spring-boot.version>
         <swagger.version>2.7.0</swagger.version>
     </properties>
 
