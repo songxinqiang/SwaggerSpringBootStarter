@@ -13,7 +13,7 @@
 <dependency>
     <groupId>cn.songxinqiang</groupId>
     <artifactId>swagger-spring-boot-starter</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.3</version>
 </dependency>
 ```
 
@@ -28,6 +28,8 @@ swagger.api.contactUser = #联系人名称
 swagger.api.contactUrl = #联系人url
 swagger.api.contactEmail = #联系人邮箱
 ```
+
+具体的使用，请查看[开源中国博客](https://my.oschina.net/songxinqiang/blog/1490463)的介绍
 
 ## swagger ui在使用时的配置
 

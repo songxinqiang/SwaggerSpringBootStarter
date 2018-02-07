@@ -58,7 +58,9 @@ public class SwaggerAutoConfigure {
     @Bean
     public Docket autoEnableSwagger() {
         return new Docket(DocumentationType.SWAGGER_2).groupName(properties.getName())
-                .apiInfo(specialApiInfo()).select().build();
+                .apiInfo(specialApiInfo())
+                .select()
+                .build();
     }
 
     /**
@@ -70,8 +72,10 @@ public class SwaggerAutoConfigure {
         Contact contact = new Contact(properties.getContactUser(), properties.getContactUrl(),
                 properties.getContactEmail());
         return new ApiInfoBuilder().title(properties.getTitle())
-                .description(properties.getDescription()).contact(contact)
-                .version(properties.getVersion()).build();
+                .description(properties.getDescription())
+                .contact(contact)
+                .version(properties.getVersion())
+                .build();
     }
 
 }

@@ -34,70 +34,69 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  */
 @ConfigurationProperties("swagger.api")
 public class SwaggerApiProperties {
-    
+
     private String name;
     private String title;
     private String description;
-    private String  version;
+    private String version;
     private String contactUser;
     private String contactUrl;
     private String contactEmail;
-    
+
     public String getName() {
         return name;
     }
-    
+
     public String getTitle() {
         return title;
     }
-    
+
     public String getDescription() {
         return description;
     }
-    
+
     public String getVersion() {
         return version;
     }
-    
+
     public String getContactUser() {
         return contactUser;
     }
-    
+
     public String getContactUrl() {
         return contactUrl;
     }
-    
+
     public String getContactEmail() {
         return contactEmail;
     }
-    
+
     public void setName(String name) {
         this.name = name;
     }
-    
+
     public void setTitle(String title) {
         this.title = title;
     }
-    
+
     public void setDescription(String description) {
         this.description = description;
     }
-    
+
     public void setVersion(String version) {
         this.version = version;
     }
-    
+
     public void setContactUser(String contactUser) {
         this.contactUser = contactUser;
     }
-    
+
     public void setContactUrl(String contactUrl) {
         this.contactUrl = contactUrl;
     }
-    
+
     public void setContactEmail(String contactEmail) {
         this.contactEmail = contactEmail;
     }
-    
 
 }
