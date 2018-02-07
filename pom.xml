@@ -11,7 +11,7 @@
 
     <artifactId>swagger-spring-boot-starter</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.3</version>
+    <version>1.0.2</version>
 
 
     <name>SpringBootSwaggerStarter</name>
