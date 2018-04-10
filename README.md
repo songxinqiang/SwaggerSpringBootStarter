@@ -13,7 +13,7 @@
 <dependency>
     <groupId>cn.songxinqiang</groupId>
     <artifactId>swagger-spring-boot-starter</artifactId>
-    <version>1.0.3</version>
+    <version>1.1.0</version>
 </dependency>
 ```
 
